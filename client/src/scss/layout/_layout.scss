@@ -1,0 +1,77 @@
+/*---------- layout
+-----------------------------------------------------------*/
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-main;
+    font-size: 14px;
+    color: $black;
+    background-color: $gray;
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(phone) {
+    }
+}
+.main-grid {
+    max-width: 100%;
+    min-width: 260px;
+    margin: 0 auto;
+    position: relative;
+    // padding: 0 20px;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .col-20 {
+        float: left;
+        text-align: center;
+        position: relative;
+        width: 20%;
+        padding: 5px 0;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(phone) {
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
