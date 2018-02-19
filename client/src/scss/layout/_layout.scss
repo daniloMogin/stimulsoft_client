@@ -10,10 +10,11 @@ html {
 }
 
 body {
+    background-color: $gray;
+    color: $black;
     font-family: $font-main;
     font-size: 14px;
-    color: $black;
-    background-color: $gray;
+    text-align: center;
     @include breakpoint(tablet) {
     }
     @include breakpoint(phone) {
